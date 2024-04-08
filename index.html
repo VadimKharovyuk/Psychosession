@@ -157,21 +157,35 @@
     }
 
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 80px; /* Отступ сверху 20px */
-      margin-left: 60px;
-      margin-right: 60px;
+    /*.gallery {*/
+    /*  display: flex;*/
+    /*  flex-wrap: wrap;*/
+    /*  justify-content: space-between;*/
+    /*  margin-top: 80px; !* Отступ сверху 20px *!*/
+    /*  margin-left: 60px;*/
+    /*  margin-right: 60px;*/
+    /*}*/
+
+    /*.photo {*/
+    /*  width: calc(20% - 10px); !* Учитываем отступы между фото *!*/
+    /*  margin-bottom: 20px;*/
+    /*  overflow: hidden; !* Обрезаем часть увеличенной фотографии *!*/
+    /*  transition: transform 0.3s ease; !* Плавное изменение при наведении *!*/
+    /*}*/
+    @media screen and (max-width: 600px) {
+      .gallery {
+        margin-left: 0; /* Убираем отступ слева */
+        margin-right: 0; /* Убираем отступ справа */
+      }
+
+      .photo {
+        width: calc(33.33% - 10px); /* Уменьшаем ширину фото на мобильных устройствах */
+        margin-left: 5px; /* Добавляем небольшой отступ между фото */
+        margin-right: 5px; /* Добавляем небольшой отступ между фото */
+        margin-bottom: 10px; /* Уменьшаем отступ снизу */
+      }
     }
 
-    .photo {
-      width: calc(20% - 10px); /* Учитываем отступы между фото */
-      margin-bottom: 20px;
-      overflow: hidden; /* Обрезаем часть увеличенной фотографии */
-      transition: transform 0.3s ease; /* Плавное изменение при наведении */
-    }
 
     .photo:hover {
       transform: scale(1.2); /* Увеличиваем фотографию при наведении на 10% */
