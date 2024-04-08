@@ -177,6 +177,7 @@
     .history {
       background-color: rgba(255, 255, 255, 0.1); /* Цвет фона с прозрачностью */
       padding: 20px; /* Поля вокруг текста */
+      margin-top: 80px;
       color: white;
       transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
 
@@ -184,17 +185,45 @@
     .history:hover {
       background-color: rgba(9, 8, 8, 0.75); /* Увеличение прозрачности при наведении на 75% */
     }
+    nav {
+      background-color: #090909;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      top: 0; /* Зафиксировать секцию вверху страницы */
+      left: 0;
+      width: 100%;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+    }
+
+    nav a:hover {
+      color: #ef8246; /* Цвет ссылок при наведении */
+    }
 
 
+    .hederMainText{
+      margin-top: 60px;
+    }
 
 
 
   </style>
 </head>
 <body>
+<nav>
+  <a href="#">Главная</a>
+  <a href="#galereya">О нас</a>
+  <a href="#history-section">История</a>
+
+</nav>
 
 <header>
-  <h1>Найди своего психолога</h1>
+  <h1 class="hederMainText">Найди своего психолога</h1>
 </header>
 
 <div class="parallax"></div>
@@ -212,7 +241,7 @@
 </div>
 
 
-<section class="history">
+<section class="history" id="history-section">
   <h2 style="color: #99a8d5">Кто такие психологи ?</h2>
   <h4>
     Психологи играют важную роль в нашей жизни, помогая людям понять себя лучше, преодолеть трудности и развиваться как личности. Они работают в различных областях, помогая клиентам справиться с разнообразными проблемами и находить новые пути к счастью и благополучию.
@@ -228,7 +257,7 @@
 
 </section>
 
-<div class="gallery">
+<div class="gallery" id="galereya">
   <div class="photo">
     <img src="/static/galery1.jpeg" alt="Photo 1">
   </div>
