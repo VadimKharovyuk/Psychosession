@@ -163,24 +163,27 @@
         height: 300px; /* Уменьшите высоту для мобильных устройств */
       }
     }
-    @media screen and (max-width: 600px) {
-      .gallery {
-        display: none; /* Скрыть галерею на мобильных устройствах */
-      }
-    }
+
 
     @media screen and (max-width: 600px) {
       #team {
         padding: 10px; /* Пример стилей для мобильных устройств */
       }
-      .aurteame {
-        font-size: 14px; /* Пример стилей для мобильных устройств */
-      }
+
     }
 
 
 
-
+    /*@media screen and (max-width: 600px) {*/
+    /*  .gallery {*/
+    /*    display: none; !* Скрыть галерею на мобильных устройствах *!*/
+    /*  }*/
+    /*}*/
+    @media (max-width: 767px) {
+      .gallery {
+        display: none;
+      }
+    }
 
   .gallery {
       display: flex;
