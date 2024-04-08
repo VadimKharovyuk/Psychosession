@@ -33,14 +33,11 @@
     }
 
     .parallax-container {
-      /*height: 100%;*/
-      height: 100vh;
       border-radius: 10px;
-      /*height: 1100px; !* Задайте висоту для контейнера паралаксу *!*/
+      height: 1100px; /* Задайте висоту для контейнера паралаксу */
       overflow-x: hidden; /* Приховати горизонтальний скролл */
       overflow-y: auto; /* Включити вертикальний скролл */
       position: relative; /* Позиціонування відносно батька */
-
     }
 
     .parallax-content {
@@ -157,35 +154,21 @@
     }
 
 
-    /*.gallery {*/
-    /*  display: flex;*/
-    /*  flex-wrap: wrap;*/
-    /*  justify-content: space-between;*/
-    /*  margin-top: 80px; !* Отступ сверху 20px *!*/
-    /*  margin-left: 60px;*/
-    /*  margin-right: 60px;*/
-    /*}*/
-
-    /*.photo {*/
-    /*  width: calc(20% - 10px); !* Учитываем отступы между фото *!*/
-    /*  margin-bottom: 20px;*/
-    /*  overflow: hidden; !* Обрезаем часть увеличенной фотографии *!*/
-    /*  transition: transform 0.3s ease; !* Плавное изменение при наведении *!*/
-    /*}*/
-    @media screen and (max-width: 600px) {
-      .gallery {
-        margin-left: 0; /* Убираем отступ слева */
-        margin-right: 0; /* Убираем отступ справа */
-      }
-
-      .photo {
-        width: calc(33.33% - 10px); /* Уменьшаем ширину фото на мобильных устройствах */
-        margin-left: 5px; /* Добавляем небольшой отступ между фото */
-        margin-right: 5px; /* Добавляем небольшой отступ между фото */
-        margin-bottom: 10px; /* Уменьшаем отступ снизу */
-      }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 80px; /* Отступ сверху 20px */
+      margin-left: 60px;
+      margin-right: 60px;
     }
 
+    .photo {
+      width: calc(20% - 10px); /* Учитываем отступы между фото */
+      margin-bottom: 20px;
+      overflow: hidden; /* Обрезаем часть увеличенной фотографии */
+      transition: transform 0.3s ease; /* Плавное изменение при наведении */
+    }
 
     .photo:hover {
       transform: scale(1.2); /* Увеличиваем фотографию при наведении на 10% */
@@ -200,7 +183,7 @@
     .history {
       background-color: rgba(255, 255, 255, 0.1); /* Цвет фона с прозрачностью */
       padding: 20px; /* Поля вокруг текста */
-      margin-top: 10px;
+      margin-top: 80px;
       color: white;
       transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
 
