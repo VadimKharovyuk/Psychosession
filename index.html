@@ -58,6 +58,7 @@
       margin-right: 100px;
       margin-bottom: 70px; /* Отступ между секциями 20 пикселей */
 
+
     }
 
     section h2 {
@@ -171,25 +172,18 @@
       }
 
     }
-
-
-
-    /*@media screen and (max-width: 600px) {*/
-    /*  .gallery {*/
-    /*    display: none; !* Скрыть галерею на мобильных устройствах *!*/
-    /*  }*/
-    /*}*/
-    @media (max-width: 120px) {
+    @media screen and (max-width: 600px) {
       .gallery {
-        display: none;
+        display: none; /* Скрыть галерею на мобильных устройствах */
       }
     }
 
+
   .gallery {
       display: flex;
-      flex-wrap: wrap;
+      /*flex-wrap: wrap;*/
       justify-content: space-between;
-      margin-top: 80px; /* Отступ сверху 20px */
+      margin-top: 20px; /* Отступ сверху 20px */
       margin-left: 60px;
       margin-right: 60px;
     }
@@ -251,8 +245,14 @@
     }
     section:hover {
       background-color: #e9ece8; /* Светло-зеленый цвет при наведении */
-      box-shadow: 0 0 90px rgb(71, 213, 22); /* Тень */
+      box-shadow: 0 0 90px rgb(18, 70, 166); /* Тень */
     }
+
+    .hederMainText:hover {
+      color: #e79191; /* Цвет текста при наведении */
+
+    }
+
 
 
 
