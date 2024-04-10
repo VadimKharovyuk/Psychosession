@@ -42,7 +42,7 @@ header {
 }
 
 section {
-    background-color: rgb(239, 236, 232);
+    background-color: rgb(157, 140, 140);
     text-align: center;
     padding: 50px 0;
     border-radius: 25px; /* Скругленные углы */
@@ -50,8 +50,10 @@ section {
     margin-right: 100px;
     margin-bottom: 70px; /* Отступ между секциями 20 пикселей */
 
-
 }
+
+
+
 
 section h2 {
     margin-bottom: 40px;
@@ -93,6 +95,7 @@ footer {
 }
 .section1{
     background-color: #b8bacc;
+
 }
 
 
@@ -175,6 +178,21 @@ a.telegram-link:hover {
 }
 
 
+/*.gallery {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-between;*/
+/*    margin-top: 20px; !* Отступ сверху 20px *!*/
+/*    margin-left: 60px;*/
+/*    margin-right: 60px;*/
+/*}*/
+
+/*.photo {*/
+/*    width: calc(20% - 10px); !* Учитываем отступы между фото *!*/
+/*    margin-bottom: 20px;*/
+/*    overflow: hidden; !* Обрезаем часть увеличенной фотографии *!*/
+/*    transition: transform 0.3s ease; !* Плавное изменение при наведении *!*/
+/*}*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -185,11 +203,17 @@ a.telegram-link:hover {
 }
 
 .photo {
-    width: calc(20% - 10px); /* Учитываем отступы между фото */
+    width: calc(33.33% - 20px); /* Пример: три элемента в ряду, с учетом отступов */
     margin-bottom: 20px;
     overflow: hidden; /* Обрезаем часть увеличенной фотографии */
     transition: transform 0.3s ease; /* Плавное изменение при наведении */
 }
+
+.photo img {
+    width: 100%; /* Сохраняем соотношение сторон */
+    height: auto; /* Автоматический расчет высоты */
+}
+
 
 .photo:hover {
     box-shadow: 0 0 10px rgb(18, 165, 231), 0 0 20px rgb(229, 225, 220); /* Добавляем двойную тень */
