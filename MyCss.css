@@ -75,15 +75,7 @@ section img {
     max-width: 450px;
 }
 
-/*footer {*/
-/*    background-color: rgba(51, 51, 51, 0.4); !* Прозрачный цвет фона *!*/
-/*    color: #fff; !* Цвет текста *!*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*    !*position: fixed;*!*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*}*/
+
 footer {
     background-color: rgba(51, 51, 51, 0.4); /* Прозрачный цвет фона */
     color: #fff; /* Цвет текста */
