@@ -80,7 +80,7 @@ footer {
     color: #fff; /* Цвет текста */
     padding: 20px;
     text-align: center;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
 }
@@ -291,5 +291,18 @@ section:hover {
     transform: scale(1.1); /* Увеличение фото при наведении на 10% */
     box-shadow: 0 0 25px rgb(85, 13, 203); /* Увеличение тени при наведении */
 }
+
+
+.footerLinkText{
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #4ca5cb,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
 
 
