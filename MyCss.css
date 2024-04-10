@@ -173,6 +173,7 @@ a.telegram-link:hover {
 }
 @media screen and (max-width: 600px) {
     .gallery {
+        height: 300px;
         /*display: none; !* Скрыть галерею на мобильных устройствах *!*/
     }
 }
